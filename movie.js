@@ -11,11 +11,12 @@ function refreshPage() {
 }
 
 
-// function of automatic slider
+
+// for changing image in slide-show
 let slideIndex = 0;
 showSlides();
 
-// for changing image in slide-show
+// function of automatic slider
 function showSlides() {
   let i;
   let slides = document.getElementsByClassName("mySlides");
@@ -28,52 +29,7 @@ function showSlides() {
   setTimeout(showSlides, 2500); 
 }
 
-
-
-const movieContainers = document.querySelectorAll('.pictures');
-
-
-// Function to check if an element is in the viewport
-// function isElementInViewport(el) {
-//     const rect = el.getBoundingClientRect();
-//     return (rect.top >= 0 && rect.bottom <= window.innerHeight);
-// }
-
-// // Function to scale the images
-// function handleImageScaling() {
-//     const pictures = document.querySelectorAll('.pictures');
-//     const windowHeight = window.innerHeight;
-//     let imageScaled = false;
-
-//     pictures.forEach((picture) => {
-//         const img = picture.querySelector('.img');
-//         const text = picture.querySelector('.text');
-//         const imgRect = img.getBoundingClientRect();
-//         const imgCenterY = imgRect.top;
-
-//         if (!imageScaled && imgCenterY > 0 && imgCenterY < windowHeight) {
-//             img.style.transform = 'scale(1.14)';
-//             text.style.transform = 'scale(1.14)';
-//             imageScaled = true;
-//         } else {
-//             img.style.transform = 'scale(1.0)';
-//             text.style.transform = 'scale(1.0)';
-//         }
-//     });
-// }
-
-// if image is on screen then call image scaling function
-// if (window.innerWidth < 500) {
-//     handleImageScaling();
-// }
-
-// Function call on every scrolling
-// if (window.innerWidth < 500) {
-//     window.addEventListener('scroll', handleImageScaling);
-// }
-
-
-
+// const movieContainers = document.querySelectorAll('.pictures');
 
 // expand search bar when clicked
 function search_size(movie2) {   
@@ -98,18 +54,6 @@ searchInput.addEventListener('blur', function () {
     }
 });
 
-
-// if movie is not found then adjust size of serch bar
-// function ifmovie_notfound_search_size(){
-//     let notfound_size = document.getElementById("search");
-//     if (window.innerWidth < 500) {
-//         notfound_size.style.width="120px"
-//         return;
-//     } else {
-//         notfound_size.width = '200px'; 
-//     }
-
-// }
 
 
 // for showing list of movies based on diffrent catogory
@@ -159,116 +103,21 @@ document.addEventListener('DOMContentLoaded', function(){
 )
 
 
+
 // search movies when search icon is pressed
 document.querySelector('form').onsubmit = function (event) {    
     event.preventDefault();
     searchMovies();
 };
-
-
-
-// final search function
-// function searchMovies() {
-
-//     //not working
-
-//     //  for image slider
-//     let image_slider = document.getElementById('show'); // Don't display image slider
-//     image_slider.style.display = 'none';
-
-//     //  for catogories name 
-//     let list_name = document.querySelectorAll('.listname')
-//     list_name.forEach(movie=>
-//         movie.style.display='none');  // dont display movie catogories name
-
-//     // now show the movie in row
-//     let movies_list =document.getElementById('listofmovies');
-//                     movies_list.style.flexDirection="row";
-//                     movies_list.style.flexWrap="wrap";
-//                     // movies_list.style.justifyContent="space-around";
-//                     movies_list.style.gap="20px";
-//                     console.log("something");
-
-//     //  for searched movie name 
-//     const input = document.getElementById('search').value.toLowerCase().trim();
-//     const movieContainers = document.querySelectorAll('.pictures');
-
-//     let result = false;
-//     let displayedMovies = []; // for storing displayed movie names
-
-//     movieContainers.forEach((container) => {
-
-//         const movieName = container.querySelector('.text a').textContent.toLowerCase().trim();
-//         // const movieCategoryDiv = container.closest('[class^="pictures"]');
-//         // console.log(movieCategoryDiv)   ;
-
-//         if (movieName.includes(input)) {
-//             if (!displayedMovies.includes(movieName)) {  
-//                 // change container style of showing image
-                    
-//                 container.style.display = 'block';
-//                 displayedMovies.push(movieName);
-//                 result = true; 
-//                 // console.log(movieName);
-                    
-//             //    const movieCategories = Array.from(movieCategoryDiv.classList).filter(cls => cls !== 'pictures'); // find ctogories of this movie
-
-
-//             } 
-//             else {
-//                 container.style.display = 'none';
-//             }
-//         } 
-//         else {
-//             container.style.display = 'none';
-//         }
-//     });
-
-//     const messageElement = document.getElementById('searchMessage'); // message box
-    
-//     if (!result) {
-//         messageElement.style.display = 'block';
-//         messageElement.textContent = 'Sorry, Movie not found. Here are some related movies:';
-//         refreshButton.style.display = 'block';
-//         showRelatedMovies(input); // to show related movies
-//     } 
-//     else {
-//         messageElement.style.display = 'none';
-//         messageElement.textContent = '';
-//         refreshButton.style.display = 'none';
-
-//         console.log("no");
-
-//     }
-
-//     //  if nothing is search 
-//     let serach_movie = document.getElementById("search");
-//     if(serach_movie.value ===""){
-
-//         let list_name = document.querySelectorAll('.listname')
-//         list_name.forEach(moviename=>
-//             moviename.style.display='block'); // display catogories name
-
-//         if(window.innerWidth > 500){
-//         image_slider.style.display='block'; // display image slider
-//         }
-
-//         let movies_list =document.getElementById('listofmovies');
-//                  movies_list.style.justifyContent="space-between";
-//                  movies_list.style.gap="20px"
-                 
-//     }   
-
-// }
-
-   
+ 
+// to searched mivies 
 function searchMovies() {
-
-    //working
 
     //  for image slider
     let image_slider = document.getElementById('show'); // Don't display image slider
     image_slider.style.display = 'none';
+
+
 
     //  for catogories name 
     let list_name = document.querySelectorAll('.listname')
@@ -276,23 +125,21 @@ function searchMovies() {
         movie.style.display='none');  // dont display movie catogories name
 
 
-    // now show the movie in row
+        
+    // now show the movies in row
     let movies_list =document.getElementById('listofmovies');
     movies_list.style.flexDirection="row";
     movies_list.style.flexWrap="wrap";
-     // movies_list.style.justifyContent="space-around";
     movies_list.style.gap="20px";
-    console.log("something");
+
 
     //  for searched movie name 
     const input = document.getElementById('search').value.toLowerCase().trim();
     const movieContainers = document.querySelectorAll('.pictures');
     
-
     let result = false;
     let displayedMovies = []; // for storing displayed movie names
-
-   
+ 
     movieContainers.forEach((container) => {
         const movieName = container.querySelector('.text a').textContent.toLowerCase().trim();
 
@@ -319,26 +166,34 @@ function searchMovies() {
         messageElement.style.display = 'block';
         messageElement.textContent = 'Sorry, Movie not found. Here are some related movies:';
         refreshButton.style.display = 'block';
-        // const moviesData = extractMovieData();
+        // const moviesData = fuse_best_movie;
+        // extractMovieData();
+        // show_fuse_RelatedMovies(input,moviesData);
         showRelatedMovies(input); // to show related movies
     } 
     else {
         messageElement.style.display = 'none';
         messageElement.textContent = '';
         refreshButton.style.display = 'none';
-
     }
 
+
+    
     //  if nothing is search 
     let serach_movie = document.getElementById("search");
+    //if nothing is searched
     if(serach_movie.value ===""){
-
         let list_name = document.querySelectorAll('.listname')
         list_name.forEach(moviename=>
             moviename.style.display='block'); // display catogories name
 
         if(window.innerWidth > 500){
-        image_slider.style.display='block'; // display image slider
+            image_slider.style.display='block'; // display image slider
+            console.log("yes");
+        }
+        else{
+            image_slider.style.display='none';
+            console.log("no");
         }
 
         let movies_list =document.getElementById('listofmovies');
@@ -349,20 +204,7 @@ function searchMovies() {
 
 
 
-
-// function extractMovieData() {
-//     const movieElements = document.querySelectorAll('.pictures');
-//     const movies = [];
-
-//     movieElements.forEach((element) => {
-//         const name = element.querySelector('.text a').textContent;
-//         movies.push({ "title": name });
-//     });
-
-//     return movies;
-// }
-
-// function showRelatedMovies(searchedMovie, moviesData) {
+// function show_fuse_RelatedMovies(searchedMovie, moviesData) {
 //     const fuseOptions = {
 //         keys: ['title'],
 //         threshold: 0.9,
@@ -373,7 +215,7 @@ function searchMovies() {
 
 //     if (searchResults.length > 0) {
 //         console.log('Related movies:');
-//         const top10Results = searchResults.slice(0, 10).map(result => result.item.title); // Retrieve top 10 results
+//         const top10Results = searchResults.slice(0, 2).map(result => result.item.title); // Retrieve top 10 results
 
         
 //             console.log(top10Results);
@@ -386,35 +228,27 @@ function searchMovies() {
 //     }
 // }
 
-
-
-
-
-
-
-
+const fuse_best_movie=[];
 function extractMovieData() {
     const movieElements = document.querySelectorAll('.pictures');
     const movies = [];
-
+   
     movieElements.forEach((element) => {
         const name = element.querySelector('.text a').textContent;
         const link = element.querySelector('.text a').href;
         const image = element.querySelector('.img').src;
         movies.push({ name, link, image });
+        fuse_best_movie.push({ "title": name });
     });
     return movies;
 }
 
 
-// sow some related movies related to searche movie
+// show some related movies related to searche movie
 function showRelatedMovies(searchQuery) {
-    //clearRelatedMovies(); // Clear previous related movie list
+    clearRelatedMovies(); // Clear previous related movie list
     const movies = extractMovieData();
 
-    // ifmovie_notfound_search_size(); 
-
-    // Filter out movies that are already displayed in the search results and remove duplicates
     const uniqueMovies = Array.from(new Set(movies.map(movie => movie.name.toLowerCase())))
         .filter(name => !name.includes(searchQuery.toLowerCase()));
 
@@ -425,7 +259,14 @@ function showRelatedMovies(searchQuery) {
         return matchCountB - matchCountA;
     });
 
+    let count_movies =0;
+
     sortedMovies.forEach(movieName => {
+
+        count_movies+=1;
+        if(count_movies>15)
+            return;
+
         const movie = movies.find(movie => movie.name.toLowerCase() === movieName);
         const movieDiv = document.createElement('div');
         movieDiv.className = 'pictures';
@@ -449,22 +290,34 @@ function showRelatedMovies(searchQuery) {
     
         textDiv.appendChild(link);
         textDiv.appendChild(playButton);
+        // textDiv.style.position='relative';
     
         movieDiv.appendChild(img);
         movieDiv.appendChild(textDiv);
     
         const mainContainer = document.querySelector('.show_related_movies');  //check
-        mainContainer.insertBefore(movieDiv, mainContainer.lastElementChild);
+        // mainContainer.insertBefore(movieDiv, mainContainer.lastElementChild);
+        mainContainer.appendChild(movieDiv);
+
+
+        img.addEventListener('mouseenter', () => {
+            link.style.color = 'red'; // Change text color to red on hover
+        });
+
+        img.addEventListener('mouseleave', () => {
+            link.style.color = 'white'; // Change text color back to white when not hovered
+        });
     
         // Position the play button after the image loads
         img.addEventListener('load', () => {
             const imgHeight = img.clientHeight;
-            const imgWidth = img.clientWidth;
+            // const imgWidth = img.
     
             // Calculate play button position
-            playButton.style.position = 'absolute';
-            // playButton.style.top = '50%';
-            // playButton.style.left = '50%';
+            playButton.style.position ='absolute';
+            playButton.style.top='40%';
+            playButton.style.left='50%';
+
             playButton.style.transform = 'translate(-50%, -50%)';
             playButton.style.marginTop = `-${imgHeight / 2}px`; 
             // playButton.style.marginLeft = `-${imgWidth / 2}px`;
