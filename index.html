@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Explore the latest movies and download them in 4k HD quality. Get access to a wide range of movie collections.">
     <meta name="keywords" content="javan movie full download in hd,javan full movie play,latest movies,download latest action movie, movie downloads, 4k HD movies, watch movies online, movie collections, entertainment, movie streaming">
+
     <!-- for search icon -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <!-- for play icon -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
@@ -35,14 +37,9 @@
                 <li><a href="help.html">Help</a></li>
             </ul>
         </div>
-        <div class="right">    
             <form class="form" >
                 <input class="sbutton" id="search" onkeyup="searchMovies()" oninput="showSuggestions(this)" onclick="search_size(this)" type="text" placeholder="Search.. Movie" name="search">
-                
-                <button type="submit" onclick="searchMovies()"><i class="fa fa-search"></i></button>   
-                <button  class="reset" onclick="clearsearch()" id="clear">Clear Search</button>    
-                <ul style="display: none;" id="suggestions"></ul>
-        </div>          
+            <i class="fa fa-search search_button"></i>         
     </nav>
     
 
@@ -154,12 +151,14 @@
     </div>  
 
     <!-- for showing related movies -->
-    <div class="show_related_movies" id="relatedMovies"></div>
+    <div class="show_related_movies" id="relatedMovies">
+
+    </div>
 
     
     <!-- MOVIES CONTENT -->
     <!-- >>> -->
-   
+    
 
         <!--Bad-Connection -->
         <div class="pictures 2023 ">
@@ -167,7 +166,10 @@
                 <img class="img" src="thumbnail/bad_connection.jpg" alt="Bad-Connection" title="Click to watch" loading="lazy">   
             </a>
             <!-- for play button -->
-            <a href="https://www.veed.io/view/fd58d6ac-8035-4ae7-acc6-6d203c4956f5?sharingWidget=true&panel=share" class='bx bx-play-circle play-btn'></a>
+            <div class="playbutton_container">
+            <a href="" class='bx bx-play-circle play-btn'></a>
+            <a href="" class="show_moviename">Bad-Connection</a>
+            </div>
             <aside class="text">
                 <a class="text" href="">Bad-Connection</a>
             </aside>
@@ -179,7 +181,10 @@
                 <img class="img" src="thumbnail/Barbie.jpg" alt="Barbie" title="Click to watch" loading="lazy">   
             </a>
             <!-- for play button -->
-            <a href="https://www.veed.io/view/fd58d6ac-8035-4ae7-acc6-6d203c4956f5?sharingWidget=true&panel=share" class='bx bx-play-circle play-btn'></a>
+            <div class="playbutton_container">
+            <a href="" class='bx bx-play-circle play-btn'></a>
+            <a href="" class="show_moviename"></a>
+            </div>
             <aside class="text">
                 <a class="text" href="">Barbie</a>
             </aside>
@@ -191,7 +196,10 @@
                 <img class="img" src="thumbnail/battleround.jpg" alt="Battleround" title="Click to watch" loading="lazy">   
             </a>
             <!-- for play button -->
-            <a href="https://www.veed.io/view/fd58d6ac-8035-4ae7-acc6-6d203c4956f5?sharingWidget=true&panel=share" class='bx bx-play-circle play-btn'></a>
+            <div class="playbutton_container">
+            <a href="" class='bx bx-play-circle play-btn'></a>
+            <a href="" class="show_moviename"></a>
+            </div>
             <aside class="text">
                 <a class="text" href="">Battleround</a>
             </aside>
@@ -203,7 +211,10 @@
                 <img class="img" src="thumbnail/bellbottom.jpg" alt="Bellbottom" title="Click to watch" loading="lazy">   
             </a>
             <!-- for play button -->
-            <a href="https://www.veed.io/view/fd58d6ac-8035-4ae7-acc6-6d203c4956f5?sharingWidget=true&panel=share" class='bx bx-play-circle play-btn'></a>
+            <div class="playbutton_container">
+                <a href="" class='bx bx-play-circle play-btn'></a>
+                <a href="" class="show_moviename"></a>
+            </div>
             <aside class="text">
                 <a class="text" href="">Bellbottom</a>
             </aside>
@@ -215,7 +226,10 @@
                 <img class="img" src="thumbnail/bhoot police.jpg" alt="Bhoot-Police" title="Click to watch" loading="lazy">   
             </a>
             <!-- for play button -->
-            <a href="https://www.veed.io/view/fd58d6ac-8035-4ae7-acc6-6d203c4956f5?sharingWidget=true&panel=share" class='bx bx-play-circle play-btn'></a>
+            <div class="playbutton_container">
+                <a href="" class='bx bx-play-circle play-btn'></a>
+                <a href="" class="show_moviename"></a>
+            </div>
             <aside class="text">
                 <a class="text" href="">Bhoot-Police</a>
             </aside>
@@ -227,7 +241,10 @@
                 <img class="img" src="thumbnail/bramhstra.jpg" alt="Bramhstra" title="Click to watch" loading="lazy">   
             </a>
             <!-- for play button -->
-            <a href="https://www.veed.io/view/fd58d6ac-8035-4ae7-acc6-6d203c4956f5?sharingWidget=true&panel=share" class='bx bx-play-circle play-btn'>Bramhstra</a>
+            <div class="playbutton_container">
+                <a href="" class='bx bx-play-circle play-btn'></a>
+                <a href="" class="show_moviename"></a>
+            </div>
             <aside class="text">
                 <a class="text" href="">Bramhstra</a>
             </aside>
@@ -239,7 +256,10 @@
                 <img class="img" src="thumbnail/dasara.jpg" alt="Dasara" title="Click to watch" loading="lazy">   
             </a>
             <!-- for play button -->
-            <a href="https://www.veed.io/view/fd58d6ac-8035-4ae7-acc6-6d203c4956f5?sharingWidget=true&panel=share" class='bx bx-play-circle play-btn'></a>
+            <div class="playbutton_container">
+                <a href="" class='bx bx-play-circle play-btn'></a>
+                <a href="" class="show_moviename"></a>
+            </div>
             <aside class="text">
                 <a class="text" href="">Dasara</a>
             </aside>
@@ -251,7 +271,10 @@
                 <img class="img" src="thumbnail/dharamabhai.jpg" alt="Dharama-Bhai" title="Click to watch" loading="lazy">   
             </a>
             <!-- for play button -->
-            <a href="https://www.veed.io/view/fd58d6ac-8035-4ae7-acc6-6d203c4956f5?sharingWidget=true&panel=share" class='bx bx-play-circle play-btn'></a>
+            <div class="playbutton_container">
+                <a href="" class='bx bx-play-circle play-btn'></a>
+                <a href="" class="show_moviename"></a>
+            </div>
             <aside class="text">
                 <a class="text" href="">Dharama-Bhai</a>
             </aside>
@@ -263,7 +286,10 @@
                 <img class="img" src="thumbnail/diljale.jpg" alt="Diljale" title="Click to watch" loading="lazy">   
             </a>
             <!-- for play button -->
-            <a href="https://www.veed.io/view/fd58d6ac-8035-4ae7-acc6-6d203c4956f5?sharingWidget=true&panel=share" class='bx bx-play-circle play-btn'></a>
+            <div class="playbutton_container">
+                <a href="" class='bx bx-play-circle play-btn'></a>
+                <a href="" class="show_moviename"></a>
+            </div>
             <aside class="text">
                 <a class="text" href="">Diljale</a>
             </aside>
@@ -275,7 +301,10 @@
                 <img class="img" src="thumbnail/ekthatiger.jpg" alt="Ek-Tha-Tiger" title="Click to watch" loading="lazy">   
             </a>
             <!-- for play button -->
-            <a href="https://www.veed.io/view/fd58d6ac-8035-4ae7-acc6-6d203c4956f5?sharingWidget=true&panel=share" class='bx bx-play-circle play-btn'></a>
+            <div class="playbutton_container">
+                <a href="" class='bx bx-play-circle play-btn'></a>
+                <a href="" class="show_moviename"></a>
+            </div>
             <aside class="text">
                 <a class="text" href="">Ek-Tha-Tiger</a>
             </aside>
@@ -287,7 +316,10 @@
                 <img class="img" src="thumbnail/extraction_2.jpg" alt="Extraction-2" title="Click to watch" loading="lazy">   
             </a>
             <!-- for play button -->
-            <a href="https://www.veed.io/view/fd58d6ac-8035-4ae7-acc6-6d203c4956f5?sharingWidget=true&panel=share" class='bx bx-play-circle play-btn'></a>
+            <div class="playbutton_container">
+                <a href="" class='bx bx-play-circle play-btn'></a>
+                <a href="" class="show_moviename"></a>
+            </div>
             <aside class="text">
                 <a class="text" href="">Extraction-2</a>
             </aside>
@@ -299,7 +331,10 @@
                 <img class="img" src="thumbnail/ganapath.jpg" alt="Ganapath" title="Click to watch" loading="lazy">   
             </a>
             <!-- for play button -->
-            <a href="https://www.veed.io/view/fd58d6ac-8035-4ae7-acc6-6d203c4956f5?sharingWidget=true&panel=share" class='bx bx-play-circle play-btn'></a>
+            <div class="playbutton_container">
+                <a href="" class='bx bx-play-circle play-btn'></a>
+                <a href="" class="show_moviename"></a>
+            </div>
             <aside class="text">
                 <a class="text" href="">Ganapath</a>
             </aside>
@@ -311,7 +346,10 @@
                 <img class="img" src="thumbnail/heropanti.jpg" alt="Heropanti" title="Click to watch" loading="lazy">   
             </a>
             <!-- for play button -->
-            <a href="https://www.veed.io/view/fd58d6ac-8035-4ae7-acc6-6d203c4956f5?sharingWidget=true&panel=share" class='bx bx-play-circle play-btn'></a>
+            <div class="playbutton_container">
+                <a href="" class='bx bx-play-circle play-btn'></a>
+                <a href="" class="show_moviename"></a>
+            </div>
             <aside class="text">
                 <a class="text" href="">Heropanti</a>
             </aside>
@@ -324,7 +362,10 @@
                 " alt="It-Lives-Inside" title="Click to watch" loading="lazy">   
             </a>
             <!-- for play button -->
-            <a href="https://www.veed.io/view/fd58d6ac-8035-4ae7-acc6-6d203c4956f5?sharingWidget=true&panel=share" class='bx bx-play-circle play-btn'></a>
+            <div class="playbutton_container">
+                <a href="" class='bx bx-play-circle play-btn'></a>
+                <a href="" class="show_moviename"></a>
+            </div>
             <aside class="text">
                 <a class="text" href="">It-Lives-Inside</a>
             </aside>
@@ -337,7 +378,10 @@
                 " alt="Jailer" title="Click to watch" loading="lazy">   
             </a>
             <!-- for play button -->
-            <a href="https://www.veed.io/view/fd58d6ac-8035-4ae7-acc6-6d203c4956f5?sharingWidget=true&panel=share" class='bx bx-play-circle play-btn'></a>
+            <div class="playbutton_container">
+                <a href="" class='bx bx-play-circle play-btn'></a>
+                <a href="" class="show_moviename"></a>
+            </div>
             <aside class="text">
                 <a class="text" href="">Jailer</a>
             </aside>
@@ -346,11 +390,14 @@
         <!-- killer -->
         <div class="pictures suspensefullMovies ">
             <a href="" target="_self">
-                <img class="img" src="thumbnail/Killer.jpg
+                <img class="img" src="thumbnail/killer.jpg
                 " alt="killer" title="Click to watch" loading="lazy">   
             </a>
             <!-- for play button -->
-            <a href="https://www.veed.io/view/fd58d6ac-8035-4ae7-acc6-6d203c4956f5?sharingWidget=true&panel=share" class='bx bx-play-circle play-btn'></a>
+            <div class="playbutton_container">
+                <a href="" class='bx bx-play-circle play-btn'></a>
+                <a href="" class="show_moviename"></a>
+            </div>
             <aside class="text">
                 <a class="text" href="">killer</a>
             </aside>
@@ -363,7 +410,10 @@
                 " alt="krish" title="Click to watch" loading="lazy">   
             </a>
             <!-- for play button -->
-            <a href="https://www.veed.io/view/fd58d6ac-8035-4ae7-acc6-6d203c4956f5?sharingWidget=true&panel=share" class='bx bx-play-circle play-btn'></a>
+            <div class="playbutton_container">
+                <a href="" class='bx bx-play-circle play-btn'></a>
+                <a href="" class="show_moviename"></a>
+            </div>
             <aside class="text">
                 <a class="text" href="">krish</a>
             </aside>
@@ -376,7 +426,10 @@
                 " alt="Tevar" title="Click to watch" loading="lazy">   
             </a>
             <!-- for play button -->
-            <a href="https://www.veed.io/view/fd58d6ac-8035-4ae7-acc6-6d203c4956f5?sharingWidget=true&panel=share" class='bx bx-play-circle play-btn'></a>
+            <div class="playbutton_container">
+                <a href="" class='bx bx-play-circle play-btn'></a>
+                <a href="" class="show_moviename"></a>
+            </div>
             <aside class="text">
                 <a class="text" href="">Tevar</a>
             </aside>
@@ -389,7 +442,10 @@
                 " alt="Pathaan" title="Click to watch" loading="lazy">   
             </a>
             <!-- for play button -->
-            <a href="https://www.veed.io/view/fd58d6ac-8035-4ae7-acc6-6d203c4956f5?sharingWidget=true&panel=share" class='bx bx-play-circle play-btn'></a>
+            <div class="playbutton_container">
+                <a href="" class='bx bx-play-circle play-btn'></a>
+                <a href="" class="show_moviename"></a>
+            </div>
             <aside class="text">
                 <a class="text" href="">Pathaan</a>
             </aside>
@@ -402,7 +458,10 @@
                 " alt="kahani" title="Click to watch" loading="lazy">   
             </a>
             <!-- for play button -->
-            <a href="https://www.veed.io/view/fd58d6ac-8035-4ae7-acc6-6d203c4956f5?sharingWidget=true&panel=share" class='bx bx-play-circle play-btn'></a>
+            <div class="playbutton_container">
+                <a href="" class='bx bx-play-circle play-btn'></a>
+                <a href="" class="show_moviename"></a>
+            </div>
             <aside class="text">
                 <a class="text" href="">kahani</a>
             </aside>
@@ -415,7 +474,10 @@
                 " alt="RRR" title="Click to watch" loading="lazy">   
             </a>
             <!-- for play button -->
-            <a href="https://www.veed.io/view/fd58d6ac-8035-4ae7-acc6-6d203c4956f5?sharingWidget=true&panel=share" class='bx bx-play-circle play-btn'></a>
+            <div class="playbutton_container">
+                <a href="" class='bx bx-play-circle play-btn'></a>
+                <a href="" class="show_moviename"></a>
+            </div>
             <aside class="text">
                 <a class="text" href="">RRR</a>
             </aside>
@@ -428,7 +490,10 @@
                 " alt="Kabzaa" title="Click to watch" loading="lazy">   
             </a>
             <!-- for play button -->
-            <a href="https://www.veed.io/view/fd58d6ac-8035-4ae7-acc6-6d203c4956f5?sharingWidget=true&panel=share" class='bx bx-play-circle play-btn'></a>
+            <div class="playbutton_container">
+                <a href="" class='bx bx-play-circle play-btn'></a>
+                <a href="" class="show_moviename"></a>
+            </div>
             <aside class="text">
                 <a class="text" href="">Kabzaa</a>
             </aside>
@@ -441,7 +506,10 @@
                 " alt="Ratsasan" title="Click to watch" loading="lazy">   
             </a>
             <!-- for play button -->
-            <a href="https://www.veed.io/view/fd58d6ac-8035-4ae7-acc6-6d203c4956f5?sharingWidget=true&panel=share" class='bx bx-play-circle play-btn'></a>
+            <div class="playbutton_container">
+                <a href="" class='bx bx-play-circle play-btn'></a>
+                <a href="" class="show_moviename"></a>
+            </div>
             <aside class="text">
                 <a class="text" href="">Ratsasan</a>
             </aside>
@@ -454,7 +522,10 @@
                 " alt="Eagle" title="Click to watch" loading="lazy">   
             </a>
             <!-- for play button -->
-            <a href="https://www.veed.io/view/fd58d6ac-8035-4ae7-acc6-6d203c4956f5?sharingWidget=true&panel=share" class='bx bx-play-circle play-btn'></a>
+            <div class="playbutton_container">
+                <a href="" class='bx bx-play-circle play-btn'></a>
+                <a href="" class="show_moviename"></a>
+            </div>
             <aside class="text">
                 <a class="text" href="">Eagle</a>
             </aside>
@@ -467,7 +538,10 @@
                 " alt="Wish" title="Click to watch" loading="lazy">   
             </a>
             <!-- for play button -->
-            <a href="https://www.veed.io/view/fd58d6ac-8035-4ae7-acc6-6d203c4956f5?sharingWidget=true&panel=share" class='bx bx-play-circle play-btn'></a>
+            <div class="playbutton_container">
+                <a href="" class='bx bx-play-circle play-btn'></a>
+                <a href="" class="show_moviename"></a>
+            </div>
             <aside class="text">
                 <a class="text" href="">Wish</a>
             </aside>
@@ -480,7 +554,10 @@
                 " alt="Talktome" title="Click to watch" loading="lazy">   
             </a>
             <!-- for play button -->
-            <a href="https://www.veed.io/view/fd58d6ac-8035-4ae7-acc6-6d203c4956f5?sharingWidget=true&panel=share" class='bx bx-play-circle play-btn'></a>
+            <div class="playbutton_container">
+                <a href="" class='bx bx-play-circle play-btn'></a>
+                <a href="" class="show_moviename"></a>
+            </div>
             <aside class="text">
                 <a class="text" href="">Talk-To-Me</a>
             </aside>
@@ -493,7 +570,10 @@
                 " alt="ScreamVI" title="Click to watch" loading="lazy">   
             </a>
             <!-- for play button -->
-            <a href="https://www.veed.io/view/fd58d6ac-8035-4ae7-acc6-6d203c4956f5?sharingWidget=true&panel=share" class='bx bx-play-circle play-btn'></a>
+            <div class="playbutton_container">
+                <a href="" class='bx bx-play-circle play-btn'></a>
+                <a href="" class="show_moviename"></a>
+            </div>
             <aside class="text">
                 <a class="text" href="">Scream-VI</a>
             </aside>
@@ -506,7 +586,10 @@
                 " alt="Peterpanwendy" title="Click to watch" loading="lazy">   
             </a>
             <!-- for play button -->
-            <a href="https://www.veed.io/view/fd58d6ac-8035-4ae7-acc6-6d203c4956f5?sharingWidget=true&panel=share" class='bx bx-play-circle play-btn'></a>
+            <div class="playbutton_container">
+                <a href="" class='bx bx-play-circle play-btn'></a>
+                <a href="" class="show_moviename"></a>
+            </div>
             <aside class="text">
                 <a class="text" href="">Peter-Pan-Wendy</a>
             </aside>
@@ -518,7 +601,10 @@
                 <img class="img" src="thumbnail/Indianajones.jpg" alt="Indiana Jones" title="Click to watch" loading="lazy">   
             </a>
             <!-- for play button -->
-            <a href="https://www.veed.io/view/fd58d6ac-8035-4ae7-acc6-6d203c4956f5?sharingWidget=true&panel=share" class='bx bx-play-circle play-btn'></a>
+            <div class="playbutton_container">
+                <a href="" class='bx bx-play-circle play-btn'></a>
+                <a href="" class="show_moviename"></a>
+            </div>
             <aside class="text">
                 <a class="text" href="">Indiana-Jones</a>
             </aside>
@@ -529,7 +615,10 @@
                 <img class="img" src="thumbnail/Hi-Papa.jpg" alt="Hi-Papa" title="Click to watch" loading="lazy">   
             </a>
             <!-- for play button -->
-            <a href="" class='bx bx-play-circle play-btn'></a>  
+            <div class="playbutton_container">
+                <a href="" class='bx bx-play-circle play-btn'></a>
+                <a href="" class="show_moviename"></a>
+            </div>
             <aside class="text">
                 <a class="text" href="">Hi-Papa</a>
             </aside>
@@ -541,7 +630,10 @@
                 <img class="img" src="thumbnail/Hauntinginvenice.jpg" alt="Haunting in Venice" title="Click to watch" loading="lazy">   
             </a>
             <!-- for play button -->
-            <a href="" class='bx bx-play-circle play-btn'></a>  
+            <div class="playbutton_container">
+                <a href="" class='bx bx-play-circle play-btn'></a>
+                <a href="" class="show_moviename"></a>
+            </div>
             <aside class="text">
                 <a class="text" href="#">Haunting-in-Venice</a>
             </aside>
@@ -553,7 +645,10 @@
                 <img class="img" src="thumbnail/Guardiansofthegalaxy.jpg" alt="Guardians of the Galaxy" title="Click to watch" loading="lazy">   
             </a>
             <!-- for play button -->
-            <a href="" class='bx bx-play-circle play-btn'></a>  
+            <div class="playbutton_container">
+                <a href="" class='bx bx-play-circle play-btn'></a>
+                <a href="" class="show_moviename"></a>
+            </div>
             <aside class="text">
                 <a class="text" href="#">Guardians-of-the-Galaxy</a>
             </aside>
@@ -565,7 +660,10 @@
                 <img class="img" src="thumbnail/Evildeadrise.jpg" alt="Evil Dead Rise" title="Click to watch" loading="lazy">   
             </a>
             <!-- for play button -->
-            <a href="" class='bx bx-play-circle play-btn'></a>  
+            <div class="playbutton_container">
+                <a href="" class='bx bx-play-circle play-btn'></a>
+                <a href="" class="show_moviename"></a>
+            </div> 
             <aside class="text">
                 <a class="text" href="#">Evil-Dead-Rise</a>
             </aside>
@@ -577,7 +675,10 @@
                 <img class="img" src="thumbnail/Elemental.jpg" alt="Elemental" title="Click to watch" loading="lazy">   
             </a>
             <!-- for play button -->
-            <a href="" class='bx bx-play-circle play-btn'></a>  
+            <div class="playbutton_container">
+                <a href="" class='bx bx-play-circle play-btn'></a>
+                <a href="" class="show_moviename"></a>
+            </div>
             <aside class="text">
                 <a class="text" href="#">Elemental</a>
             </aside>
@@ -589,7 +690,10 @@
                 <img class="img" src="thumbnail\Wish-English.jpg" alt="Wish-English" title="Click to watch" loading="lazy">   
             </a>
             <!-- for play button -->
-            <a href="" class='bx bx-play-circle play-btn'></a>  
+            <div class="playbutton_container">
+                <a href="" class='bx bx-play-circle play-btn'></a>
+                <a href="" class="show_moviename"></a>
+            </div>
             <aside class="text">
                 <a class="text" href="#">Wish-English</a>
             </aside>
@@ -601,7 +705,10 @@
                 <img class="img" src="thumbnail/Do-Ajnabee.jpg" alt="Do Ajnabee" title="Click to watch" loading="lazy">   
             </a>
             <!-- for play button -->
-            <a href="" class='bx bx-play-circle play-btn'></a>  
+            <div class="playbutton_container">
+                <a href="" class='bx bx-play-circle play-btn'></a>
+                <a href="" class="show_moviename"></a>
+            </div>
             <aside class="text">
                 <a class="text" href="#">Do-Ajnabee</a>
             </aside>
@@ -613,7 +720,10 @@
                 <img class="img" src="thumbnail/Kadak-Singh.jpg" alt="Kadak Singh" title="Click to watch" loading="lazy">   
             </a>
             <!-- for play button -->
-            <a href="" class='bx bx-play-circle play-btn'></a>  
+            <div class="playbutton_container">
+                <a href="" class='bx bx-play-circle play-btn'></a>
+                <a href="" class="show_moviename"></a>
+            </div>
             <aside class="text">
                 <a class="text" href="#">Kadak-Singh</a>
             </aside>
@@ -625,7 +735,10 @@
                 <img class="img" src="thumbnail/Kastoori.jpg" alt="Kastoori" title="Click to watch" loading="lazy">   
             </a>
             <!-- for play button -->
-            <a href="" class='bx bx-play-circle play-btn'></a>  
+            <div class="playbutton_container">
+                <a href="" class='bx bx-play-circle play-btn'></a>
+                <a href="" class="show_moviename"></a>
+            </div>
             <aside class="text">
                 <a class="text" href="#">Kastoori</a>
             </aside>
@@ -637,7 +750,10 @@
                 <img class="img" src="thumbnail/Yaatris.jpg" alt="Yaatris" title="Click to watch" loading="lazy">   
             </a>
             <!-- for play button -->
-            <a href="" class='bx bx-play-circle play-btn'></a>  
+            <div class="playbutton_container">
+                <a href="" class='bx bx-play-circle play-btn'></a>
+                <a href="" class="show_moviename"></a>
+            </div>
             <aside class="text">
                 <a class="text" href="#">Yaatris</a>
             </aside>
@@ -649,7 +765,10 @@
                 <img class="img" src="thumbnail/Napoleon.jpg" alt="Napoleon" title="Click to watch" loading="lazy">   
             </a>
             <!-- for play button -->
-            <a href="" class='bx bx-play-circle play-btn'></a>  
+            <div class="playbutton_container">
+                <a href="" class='bx bx-play-circle play-btn'></a>
+                <a href="" class="show_moviename"></a>
+            </div>
             <aside class="text">
                 <a class="text" href="#">Napoleon</a>
             </aside>
@@ -661,7 +780,10 @@
                 <img class="img" src="thumbnail/Anari-Is-Back.jpg" alt="Anari Is Back" title="Click to watch" loading="lazy">   
             </a>
             <!-- for play button -->
-            <a href="" class='bx bx-play-circle play-btn'></a>  
+            <div class="playbutton_container">
+                <a href="" class='bx bx-play-circle play-btn'></a>
+                <a href="" class="show_moviename"></a>
+            </div>
             <aside class="text">
                 <a class="text" href="#">Anari-Is-Back</a>
             </aside>
@@ -673,7 +795,10 @@
                 <img class="img" src="thumbnail/Antman.jpg" alt="Antman" title="Click to watch" loading="lazy">   
             </a>
             <!-- for play button -->
-            <a href="" class='bx bx-play-circle play-btn'></a>  
+            <div class="playbutton_container">
+                <a href="" class='bx bx-play-circle play-btn'></a>
+                <a href="" class="show_moviename"></a>
+            </div>
             <aside class="text">
                 <a class="text" href="#">Antman</a>
             </aside>
@@ -685,7 +810,10 @@
                 <img class="img" src="thumbnail/ramleela.jpg" alt="Ramleela" title="Click to watch" loading="lazy">   
             </a>
             <!-- for play button -->
-            <a href="" class='bx bx-play-circle play-btn'></a>  
+            <div class="playbutton_container">
+                <a href="" class='bx bx-play-circle play-btn'></a>
+                <a href="" class="show_moviename"></a>
+            </div> 
             <aside class="text">
                 <a class="text" href="#">Ramleela</a>
             </aside>
@@ -697,7 +825,10 @@
                 <img class="img" src="thumbnail/Beauisafraid.jpg" alt="Beau is a faraid" title="Click to watch" loading="lazy">   
             </a>
             <!-- for play button -->
-            <a href="" class='bx bx-play-circle play-btn'></a>  
+            <div class="playbutton_container">
+                <a href="" class='bx bx-play-circle play-btn'></a>
+                <a href="" class="show_moviename"></a>
+            </div>
             <aside class="text">
                 <a class="text" href="#">Beau-is-a-faraid</a>
             </aside>
@@ -709,7 +840,10 @@
                 <img class="img" src="thumbnail/Dilon-Mein-Uphaan.jpg" alt="Dilon Mein Uphaan" title="Click to watch" loading="lazy">   
             </a>
             <!-- for play button -->
-            <a href="" class='bx bx-play-circle play-btn'></a>  
+            <div class="playbutton_container">
+                <a href="" class='bx bx-play-circle play-btn'></a>
+                <a href="" class="show_moviename"></a>
+            </div>
             <aside class="text">
                 <a class="text" href="#">Dilon-Mein-Uphaan</a>
             </aside>
@@ -721,7 +855,10 @@
                 <img class="img" src="thumbnail/samara.jpg" alt="Samara" title="Click to watch" loading="lazy">   
             </a>
             <!-- for play button -->
-            <a href="" class='bx bx-play-circle play-btn'></a>  
+            <div class="playbutton_container">
+                <a href="" class='bx bx-play-circle play-btn'></a>
+                <a href="" class="show_moviename"></a>
+            </div> 
             <aside class="text">
                 <a class="text" href="#">Samara</a>
             </aside>
@@ -733,7 +870,10 @@
                 <img class="img" src="thumbnail/jawan.jpg" alt="Jawan" title="Click to watch" loading="lazy">   
             </a>
             <!-- for play button -->
-            <a href="" class='bx bx-play-circle play-btn'></a>  
+            <div class="playbutton_container">
+                <a href="" class='bx bx-play-circle play-btn'></a>
+                <a href="" class="show_moviename"></a>
+            </div> 
             <aside class="text">
                 <a class="text" href="#">Jawan</a>
             </aside>
@@ -746,7 +886,10 @@
                 <img class="img" src="thumbnail\gadar2.jpg" alt="Gadar 2" title="Click to watch"  loading="lazy">
             </a>
             <!-- for play button -->
-            <a href="" class='bx bx-play-circle play-btn'></a>  
+            <div class="playbutton_container">
+                <a href="" class='bx bx-play-circle play-btn'></a>
+                <a href="" class="show_moviename"></a>
+            </div> 
             <aside class="text">
                 <a class="text"  href="https://www.veed.io/view/bc776585-6d73-4ea0-893f-90cff218b47d?sharingWidget=true&panel=share">Gadar2</a>
             </aside>
@@ -758,7 +901,10 @@
                 <img class="img" src="thumbnail\omg2.jpg" alt="OMG 2" title="Click to watch" loading="lazy">
             </a>
             <!-- for play button -->
-            <a href="" class='bx bx-play-circle play-btn'></a> 
+            <div class="playbutton_container">
+                <a href="" class='bx bx-play-circle play-btn'></a>
+                <a href="" class="show_moviename"></a>
+            </div>
             <aside class="text">
                 <a class="text"  href="https://www.veed.io/view/fd58d6ac-8035-4ae7-acc6-6d203c4956f5?sharingWidget=true&panel=share">Omg 2</a>
             </aside>
@@ -766,13 +912,16 @@
 
         <!-- Happynewyear -->
         <div class="pictures bollywood">
-            <a href="https://www.veed.io/view/c77fd80e-a189-4f32-b5d2-b00945fcfb8e?sharingWidget=true&panel=share">
+            <a href="">
                 <img class="img" src="thumbnail\happynewyear.jpg" alt="Ghoomer" title="Click to watch" loading="lazy">
             </a>
             <!-- for play button -->
-            <a href="" class='bx bx-play-circle play-btn'></a>  
+            <a href="" class='bx bx-play-circle play-btn'></a> <div class="playbutton_container">
+                <a href="" class='bx bx-play-circle play-btn'></a>
+                <a href="" class="show_moviename"></a>
+            </div> 
             <aside class="text">
-                <a class="text"  href="https://www.veed.io/view/c77fd80e-a189-4f32-b5d2-b00945fcfb8e?sharingWidget=true&panel=share">Happy-New-Year</a>
+                <a class="text"  href="">Happy-New-Year</a>
             </aside>
         </div>   
 
@@ -782,7 +931,10 @@
                 <img class="img" src="thumbnail/kgfchapter2.jpg" alt="Kgf Chapter 2" title="Click to watch" loading="lazy">
             </a>
             <!-- for play button -->
-            <a href="" class='bx bx-play-circle play-btn'></a>  
+            <div class="playbutton_container">
+                <a href="" class='bx bx-play-circle play-btn'></a>
+                <a href="" class="show_moviename"></a>
+            </div>
             <aside class="text">
                 <a class="text"  href="https://www.veed.io/view/5ad8baf7-b0b9-4914-8e5e-2b8c3432ecdf?sharingWidget=true&panel=share">Kgf-Chapter-2</a>
             </aside>
@@ -794,7 +946,10 @@
                 <img class="img" src="thumbnail\pushpa.jpg" alt="Pushpa" title="Click to watch" loading="lazy">
             </a>
             <!-- for play button -->
-            <a href="" class='bx bx-play-circle play-btn'></a>  
+            <div class="playbutton_container">
+                <a href="" class='bx bx-play-circle play-btn'></a>
+                <a href="" class="show_moviename"></a>
+            </div>  
             <aside class="text">
                 <a class="text"  href="">Pushpa</a>
             </aside>
